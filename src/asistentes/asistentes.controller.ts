@@ -12,7 +12,7 @@ export class AsistentesController {
     @Get()
     getAsistentes(): Promise<Asistente[]>{
         return this.asistentesService.getAsistentes();
-    }
+    } 
 
     @Get(':id')
     getAsistente(@Param('id', ParseIntPipe) id: number): Promise<Asistente>{
